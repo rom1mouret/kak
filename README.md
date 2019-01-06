@@ -33,7 +33,7 @@ Before shuffling and training, install *shoputils*:
 About *shoputils* content:
 
 * the most important part is the model itself: shoputils/general_net.py
-* roughly 30% of the code is unused. This is because I did other experiments and kept the code around. 
+* roughly 30% of the code is unused. This is because I did other experiments and kept the code around.
 
 ## Shuffling
 
@@ -66,12 +66,16 @@ touch stop
 ```
 
 time: between 3 hours and 8 hours. Monitor stdout to check the progress.
+
 SGD often gets stuck. When this happens, the script will look for better hyperparameters using Bayesian optimization. This is what really takes time.
+
 When the Bayesian optimization repeatedly fails to improve the evaluation score, it is time to touch *stop*.
 
 ## Inference
 
+```sh
 ./inference.py ../experiment1/models/<last_model>.yml ../dev.chunk.01
+```
 
 The TSV results will be created in the same directory.
 
