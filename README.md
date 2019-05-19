@@ -3,12 +3,6 @@
 This project is a solution to Kakao's shopping mall ML competition.
 https://arena.kakao.com/c/1/
 
-## Shameless plug
-
-You want to play around with CNNs, LSTMs, GANs in a Seoul-based company? hit me up at ai@igloosec.com (CC: mouret.romain) with a resume ;)
-
-For any question about the project, submit a github issue.
-
 ## Requirements
 
 * Python >= 3.6 (might work with Python 3.5 as well)
